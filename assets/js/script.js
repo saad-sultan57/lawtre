@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const burgerCheckbox = document.querySelector('.burger');
 
     navbarToggler.addEventListener('click', function() {
-        overlay.classList.add('show');
+        overlay.classList.toggle('show');
 
     });
 
