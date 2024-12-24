@@ -29,11 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     navbarToggler.addEventListener('click', function() {
         overlay.classList.add('show');
+
     });
 
     // Close menu when clicking overlay
     overlay.addEventListener('click', function() {
         overlay.classList.remove('show');
+        
         document.querySelector('.navbar-collapse').classList.remove('show');
         burgerCheckbox.checked = false;
     });
