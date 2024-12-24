@@ -20,3 +20,21 @@ function setActiveNavLink() {
 
 // Call the function when the DOM is loaded
 document.addEventListener('DOMContentLoaded', setActiveNavLink);
+
+// Add these new functions
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const overlay = document.querySelector('.overlay');
+    const burgerCheckbox = document.querySelector('.burger');
+
+    navbarToggler.addEventListener('click', function() {
+        overlay.classList.add('show');
+    });
+
+    // Close menu when clicking overlay
+    overlay.addEventListener('click', function() {
+        overlay.classList.remove('show');
+        document.querySelector('.navbar-collapse').classList.remove('show');
+        burgerCheckbox.checked = false;
+    });
+});
