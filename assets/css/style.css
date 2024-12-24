@@ -285,4 +285,29 @@ body {
     display: block;
 }
 
-/* Toggle button */
+@media only screen and (max-width:1670px){
+    .arrow-box{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 740px) and (max-width: 992px) {
+    .arrow-box{
+        display: block !important;
+    }
+}
+.arrow-box{
+    
+    width: 250px;
+    position: absolute;
+    bottom: 200px;
+    right: 5px;
+    z-index: 999;
+}
+.arrow-box h4{
+    font-weight: 600;
+}
+.arrow-box img{
+    width: 100px;
+}
