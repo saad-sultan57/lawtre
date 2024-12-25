@@ -1,7 +1,4 @@
 @media only screen and (min-width:992px) {
-    .about-image{
-        height: 100vh;
-    }
     .about-text{
         margin: 0px;
     }
@@ -25,7 +22,6 @@
     }
     .main-page{
         height: auto !important;
-        align-items: flex-start;
     }
     .main-page img{
         height: auto !important;
